@@ -76,3 +76,9 @@ function showQuestion(){
 
     });
     }
+    function resetState(){
+        nextBtn.style.display = "none";
+        while(answerBtns.firstChild){
+            answerBtns.removeChild(answerBtns.firstChild)
+        }
+    }

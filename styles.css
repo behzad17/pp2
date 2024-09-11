@@ -52,6 +52,7 @@ body{
     outline: none;
     border-radius: 5px;
     margin: 20px auto 0;
+    display: none;
 }
 .correct{
     background-color: #44bd32;
