@@ -72,6 +72,7 @@ function showQuestion(){
         if( answer.correct){
             btn.dataset.correct = answer.text;
         }
-    })
+        btn.addEventListener('click', selectAnswer);
+
+    });
     }
-}
