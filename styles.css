@@ -53,3 +53,10 @@ body{
     border-radius: 5px;
     margin: 20px auto 0;
 }
+.correct{
+    background-color: #44bd32;
+}
+
+.incorrect{
+    background-color: #c23616;
+}

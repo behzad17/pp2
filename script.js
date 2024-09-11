@@ -44,3 +44,7 @@ const question = [
          ]
     },
 ];
+
+const questionElements = document.getElementById("question");
+const answerbtns = document.getElementById("answerbtn");
+const nextbtn = document.getElementById("nextbtn");
