@@ -48,3 +48,30 @@ const question = [
 const questionElements = document.getElementById("question");
 const answerbtns = document.getElementById("answerbtn");
 const nextbtn = document.getElementById("nextbtn");
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startQuiz (){
+    currentQuestionIndex = 0;
+    score =0;
+    nextBtn.innerHTML = "Next";
+    showQuestion();
+}
+function showQuestion(){
+    resetState();
+    let currentQuestion = guestions[currentQuestionIndex];
+    let questionNum = currentQuestionIndex + 1;
+    guestionElement.innerHTML = guestionNum + "." + currentQuestion.guestion;
+
+    currentQuestion.answers.forEach(answer => {
+        const btn = document.createElement("button");
+        btn.innerHTML = answer.text;
+        btn.classList.add("btn");
+        answerbtns.appendChild("btn");
+        if( answer.correct){
+            btn.dataset.correct = answer.text;
+        }
+    })
+    }
+}
