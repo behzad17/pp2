@@ -1,11 +1,11 @@
-const question = [ 
+const questions = [ 
     {
-        question: "how many seats are there in Sweden's parliament?",
+        question: "how many seats are there in Sweden's parlament?",
         answers: [
-            {text: "347", correct:false},
-            {text: "348", correct:false},
-            {text: "349", correct:true},
-            {text: "350", correct:false},
+            {text: "347", incorrect: false},
+            {text: "348", incorrect: false},
+            {text: "349", correct: true},
+            {text: "350", incorrect: false},
         
          ]
     },
@@ -13,10 +13,10 @@ const question = [
     {
         question: "how many partys is there in parlament 2024?",
         answers: [
-            {text: "8", correct:true},
-            {text: "9", correct:false},
-            {text: "11", correct:false},
-            {text: "12", correct:false},
+            {text: "8", correct: true},
+            {text: "9", incorrect: false},
+            {text: "11", incorrect: false},
+            {text: "12", incorrect: false},
         
          ]
         },
@@ -24,11 +24,10 @@ const question = [
     {
         question: "What is the bigest party in Sweden's parlament?",
         answers: [
-            
-            {text: "The Moderate Party", correct:false},
-            {text: "The Left Party", correct:false},
-            {text: "The Sweden Democrats", correct:false},
-            {text: "The Social Democratic Party", correct:true},
+            {text: "The Moderate Party", incorrect: false},
+            {text: "The Left Party", incorrect: false},
+            {text: "The Sweden Democrats", incorrect: false},
+            {text: "The Social Democratic Party", correct: true},
         
          ]
         },
@@ -36,17 +35,17 @@ const question = [
     {
         question: "What is the smalest party in Sweden's parlament?",
         answers: [
-            {text: "The Centre Party", correct:false},
-            {text: "The Liberal Party", correct:true},
-            {text: "The Green Party", correct:false},
-            {text: "The Christian Democrats", correct:false},
+            {text: "The Centre Party", incorrect: false},
+            {text: "The Liberal Party", correct: true},
+            {text: "The Green Party", incorrect: false},
+            {text: "The Christian Democrats", incorrect: false},
         
          ]
         },
 ];
 
 const questionElement = document.getElementById("question");
-const answerbtns = document.getElementById("answerbtn");
+const answerBtns = document.getElementById("answerbtn");
 const nextBtn = document.getElementById("nextbtn");
 
 let currentQuestionIndex = 0;
@@ -71,7 +70,7 @@ function showQuestion(){
         btn.classList.add("btn");
         answerBtns.appendChild("btn");
 
-        if( answer.correct){
+        if(answer.correct){
             btn.dataset.correct = answer.text;
         }
         btn.addEventListener('click', selectAnswer);
@@ -85,17 +84,17 @@ function showQuestion(){
             answerBtns.removeChild(answerBtns.firstChild);
         }
 }
-function selectAnswer(e){
+
+/*function selectAnswer(e){
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect) {
+    if(iscorrect) {
         selectedBtn.classList.add("correct");
         score++;
-    }
-    else{
-        selectedBtn.classList.add("incorrect");
+    } else{
+        selectedBtn.classList.add("inCorrect");
     }
     
-}
+}*/
 
 startQuiz();
