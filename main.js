@@ -60,9 +60,9 @@ function startQuiz(){
 
 function showQuestion(){
     resetState();
-    let currentQuestion = guestions[currentQuestionIndex];
+    let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
-    guestionElement.innerHTML = questionNum + "." + currentQuestion.question;
+    questionElement.innerHTML = questionNum + "." + currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
         const btn = document.createElement("button");
