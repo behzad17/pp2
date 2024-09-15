@@ -112,4 +112,7 @@ nextBtn.addEventListener("click", () => {
         showResults();
     }
 });
+function showResults( {
+    questionElement.innerHTML = `Quiz Complete! you scored ${score} out of ${question.length}.`;
+})
 
