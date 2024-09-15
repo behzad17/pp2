@@ -103,4 +103,8 @@ function selectAnswer(e){
     nextBtn.style.display = "block";
 }
 
-startQuiz();
+function showScore(){
+    resetState();
+    guestionElement.innerHTML = 'your score'
+}
+
