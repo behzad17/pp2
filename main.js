@@ -68,7 +68,7 @@ function showQuestion(){
         const btn = document.createElement("button");
         btn.innerHTML = answer.text;
         btn.classList.add("btn");
-        answerBtns.appendChild("btn");
+        answerBtns.appendChild(btn);
 
         if(answer.correct){
             btn.dataset.correct = answer.correct;
