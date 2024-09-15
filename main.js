@@ -7,7 +7,7 @@ const questions = [
             {text: "349", correct: true},
             {text: "350", incorrect: false},
         
-         ],
+         ]
     },
 
     {
@@ -18,7 +18,7 @@ const questions = [
             {text: "11", incorrect: false},
             {text: "12", incorrect: false},
         
-         ],
+         ]
         },
 
     {
@@ -29,7 +29,7 @@ const questions = [
             {text: "The Sweden Democrats", incorrect: false},
             {text: "The Social Democratic Party", correct: true},
         
-         ],
+         ]
         },
 
     {
@@ -40,7 +40,7 @@ const questions = [
             {text: "The Green Party", incorrect: false},
             {text: "The Christian Democrats", incorrect: false},
         
-         ],
+         ]
         },
 ];
 
@@ -94,16 +94,16 @@ function selectAnswer(e){
     } else{
         selectedBtn.classList.add("inCorrect");
     }
-    Array.from(answerBtns.children).forEach((btn) => {
+    Array.from(answerBtns.children).forEach(btn => {
         if(btn.dataset.correct === "true"){
-            btn.classList.add(correct);
+            btn.classList.add("correct");
         }
         btn.disabaled = true;
     });
     nextBtn.style.display = "block";
 }
 
-nextBtn.addEventListener("click", () => {
+nextBtn.addEventListener('click', () => {
     currentQuestionIndex++;
 
     if(currentQuestionIndex < questions.length) {
@@ -114,7 +114,7 @@ nextBtn.addEventListener("click", () => {
 });
 function showResults() {
     questionElement.innerHTML = `Quiz Complete! you scored ${score} out of ${questions.length}.`;
-nextBtn.style.display = "none";
+     nextBtn.style.display = "none";
 }
 //start the Quiz
 
