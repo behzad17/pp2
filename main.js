@@ -103,8 +103,13 @@ function selectAnswer(e){
     nextBtn.style.display = "block";
 }
 
-function showScore(){
-    resetState();
-    guestionElement.innerHTML = 'your score'
-}
+nextBtn.addEventListener("click", () => {
+    currentQuestionIndex++;
+
+    if(currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        showResults();
+    }
+});
 
