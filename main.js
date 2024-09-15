@@ -7,7 +7,7 @@ const questions = [
             {text: "349", correct: true},
             {text: "350", incorrect: false},
         
-         ]
+         ],
     },
 
     {
@@ -18,7 +18,7 @@ const questions = [
             {text: "11", incorrect: false},
             {text: "12", incorrect: false},
         
-         ]
+         ],
         },
 
     {
@@ -29,7 +29,7 @@ const questions = [
             {text: "The Sweden Democrats", incorrect: false},
             {text: "The Social Democratic Party", correct: true},
         
-         ]
+         ],
         },
 
     {
@@ -40,7 +40,7 @@ const questions = [
             {text: "The Green Party", incorrect: false},
             {text: "The Christian Democrats", incorrect: false},
         
-         ]
+         ],
         },
 ];
 
@@ -62,11 +62,11 @@ function showQuestion(){
     resetState();
     let currentQuestion = guestions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
-    guestionElement.innerHTML = guestionNum + "." + currentQuestion.question;
+    guestionElement.innerHTML = questionNum + "." + currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
         const btn = document.createElement("button");
-        btn.innerHTML = answer.correct;
+        btn.innerHTML = answer.text;
         btn.classList.add("btn");
         answerBtns.appendChild("btn");
 
@@ -94,7 +94,7 @@ function selectAnswer(e){
     } else{
         selectedBtn.classList.add("inCorrect");
     }
-    Array.from(answerBtns.children).forEach(btn => {
+    Array.from(answerBtns.children).forEach((btn) => {
         if(btn.dataset.correct === "true"){
             btn.classList.add(correct);
         }
@@ -113,7 +113,9 @@ nextBtn.addEventListener("click", () => {
     }
 });
 function showResults() {
-    questionElement.innerHTML = `Quiz Complete! you scored ${score} out of ${question.length}.`;
+    questionElement.innerHTML = `Quiz Complete! you scored ${score} out of ${questions.length}.`;
 nextBtn.style.display = "none";
 }
+//start the Quiz
 
+startQuiz();
