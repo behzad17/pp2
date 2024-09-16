@@ -60,7 +60,7 @@ let score = 0;
 let username = "";
 
 // Start Quiz when Username is provided
-startBtn.addEventListener("click", () => {
+startBtns.addEventListener("click", () => {
     username = usernameInput.value.trim();
     if(username) {
         usernameSection.classList.add("hidden");
