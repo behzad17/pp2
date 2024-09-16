@@ -23,7 +23,10 @@ body{
 .quiz{
     padding: 10px 0;
 }
-.quiz h3{
+.quiz, .result{
+    padding: 10px;
+}
+.quiz h3, .result h3{
     color: #3867d6;
     font-size: 20px;
     font-weight: bold;
@@ -42,7 +45,7 @@ body{
     padding: 10px;
     cursor: pointer;
 }
-#nextbtn{
+#nextbtn, #restart-btn{
     width: 120px;
     height: 40px;
     background: #3867d6;
@@ -54,10 +57,14 @@ body{
     margin: 20px auto 0;
     display: none;
 }
+
 .correct{
     background-color: #44bd32;
 }
 
 .inCorrect{
     background-color: #c23616;
+}
+.hidden{
+    display: none;
 }
