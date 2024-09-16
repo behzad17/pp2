@@ -59,6 +59,17 @@ let currentQuestionIndex = 0;
 let score = 0;
 let username = "";
 
+// Start Quiz after Username is provided
+startBtn.addEventListener("click", () => {
+    username = usernameInput.ariaValueMax.trim();
+    if(username) {
+        usernameSection.classList.add("hidden");
+        quizSection.classList.remove("hidden");
+        startQuiz();
+    } else{
+        alert("Enter a username to start the quiz")
+    }
+});
 
 function startQuiz(){
     currentQuestionIndex = 0;
