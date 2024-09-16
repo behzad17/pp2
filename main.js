@@ -47,9 +47,18 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerBtns = document.getElementById("answerbtn");
 const nextBtn = document.getElementById("nextbtn");
+const resultText = document.getElementById("result-text");
+const restartBtn = document.getElementById("quiz-section");
+
+const usernameInput = document.getElementById("username-input");
+const startBtns = document.getElementById("startrbtn");
+const usernameSection = document.getElementById("username-section");
+const quizSection = document.getElementById("quiz-section");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let username = "";
+
 
 function startQuiz(){
     currentQuestionIndex = 0;
