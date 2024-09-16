@@ -8,7 +8,7 @@ body{
 }
 .app{
     background: #fff;
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
     border-radius: 10px;
     padding: 20px;
@@ -47,7 +47,7 @@ body{
 }
 #nextbtn, #restart-btn{
     width: 120px;
-    height: 150px;
+    height: 40px;
     background: #3867d6;
     color: #fff;
     font-size: 20px;
