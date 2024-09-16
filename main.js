@@ -59,7 +59,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let username = "";
 
-// Start Quiz after Username is provided
+// Start Quiz when Username is provided
 startBtn.addEventListener("click", () => {
     username = usernameInput.ariaValueMax.trim();
     if(username) {
@@ -133,9 +133,11 @@ nextBtn.addEventListener('click', () => {
     }
 });
 function showResults() {
-    questionElement.innerHTML = `Quiz Complete! you scored ${score} out of ${questions.length}.`;
-     nextBtn.style.display = "none";
+    quizSection.classList.add("hidden");
+    document.getElementById("result-section").classList.remove("hidden");
+    resultText.innerHTML = `Quiz Complete! ${username}, you scored ${score} out of ${questions.length}.`;
+     restartBtn.style.display = "block";
+     // here Shows the restart button when the quiz is complete
 }
-//start the Quiz
 
-startQuiz();
+
