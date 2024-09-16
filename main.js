@@ -47,7 +47,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerBtns = document.getElementById("answerbtn");
 const nextBtn = document.getElementById("nextbtn");
-const resultText = document.getElementById("result-text");
+const resultText = document.getElementById("result-section");
 const restartBtn = document.getElementById("restart-btn");
 
 const usernameInput = document.getElementById("username-input");
@@ -60,7 +60,7 @@ let score = 0;
 let username = "";
 
 // Start Quiz when Username is provided
-startBtn.addEventListener("click", () => {
+startBtns.addEventListener("click", () => {
     username = usernameInput.value.trim();
     if(username) {
         usernameSection.classList.add("hidden");
@@ -143,5 +143,3 @@ restartBtn.addEventListener("click", () => {
     usernameSection.classList.remove("hidden");
     usernameInput.value = "";
 });
-
-
