@@ -137,7 +137,7 @@ function showResults() {
     restartBtn.style.display = "block";
      // here Shows the restart button when the quiz is complete
 }
-//restart section
+//reset section
 restartBtn.addEventListener("click", () => {
     document.getElementById("result-section").classList.add("hidden");
     usernameSection.classList.remove("hidden");
