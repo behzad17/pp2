@@ -11,7 +11,7 @@ const questions = [
     },
 
     {
-        question: "how many partys is there in parlament 2024?",
+        question: "how many partys is there in parliament 2024?",
         answers: [
             { text: "8", correct: true },
             { text: "9", incorrect: false },
@@ -22,7 +22,7 @@ const questions = [
         },
 
     {
-        question: "What is the bigest party in Sweden's parlament?",
+        question: "What is the bigest party in Sweden's parliament?",
         answers: [
             { text: "The Moderate Party", incorrect: false },
             { text: "The Left Party", incorrect: false },
@@ -32,7 +32,7 @@ const questions = [
          ],
         },
     {
-        question: "What is the smalest party in Sweden's parlament?",
+        question: "What is the smalest party in Sweden's parliament?",
         answers: [
             { text: "The Centre Party", incorrect: false },
             { text: "The Liberal Party", correct: true },
@@ -41,6 +41,17 @@ const questions = [
         
          ],
         },
+
+        {
+            question: "who is the current Speaker of  Sweden's parliament?",
+            answers: [
+                { text: "Magdalena Andersson", incorrect: false },
+                { text: "Andreas Norlén", correct: true },
+                { text: "Ulf Kristersson", incorrect: false },
+                { text: "Jimmie Åkesson", incorrect: false },
+            
+             ],
+            },
 ];
 
 const questionElement = document.getElementById("question");
