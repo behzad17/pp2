@@ -3,36 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     background-color:aquamarine;
 }
-.app{
+.app {
     background: #fff;
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     border-radius: 10px;
     padding: 20px;
     margin: 100px auto 0;
 }
-.app h2{
+.app h2 {
     font-weight: bold;
     color: #3867d6;
     border-bottom: 1px solid #333;
     padding-bottom: 25px;
 }
-.quiz{
+
+.quiz, .result {
     padding: 10px 0;
 }
-.quiz, .result{
-    padding: 10px;
-}
-.quiz h3, .result h3{
+.quiz h3, .result h3 {
     color: #3867d6;
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
 }
-.btn{
+.btn {
     background: #fff;
     color: #000;
     font-size: 20px;
@@ -45,7 +43,7 @@ body{
     padding: 10px;
     cursor: pointer;
 }
-#nextbtn, #restart-btn{
+#nextbtn, #restart-btn {
     width: 120px;
     height: 40px;
     background: #3867d6;
@@ -58,13 +56,13 @@ body{
     display: none;
 }
 
-.correct{
+.correct {
     background-color: #44bd32;
 }
 
-.inCorrect{
+.inCorrect {
     background-color: #c23616;
 }
-.hidden{
+.hidden {
     display: none;
 }
