@@ -1,6 +1,6 @@
 const questions = [ 
     {
-        question: "how many seats are there in Sweden's parlament?",
+        question: "how many seats are there in Sweden's parliament?",
         answers: [
             { text: "347", incorrect: false },
             { text: "348", incorrect: false },
@@ -11,7 +11,7 @@ const questions = [
     },
 
     {
-        question: "how many partys is there in parliament 2024?",
+        question: "how many partys is there in parliament 2024 ?",
         answers: [
             { text: "8", correct: true },
             { text: "9", incorrect: false },
@@ -43,7 +43,7 @@ const questions = [
         },
 
         {
-            question: "who is the current Speaker of  Sweden's parliament?",
+            question: "who is the current Speaker of Sweden's parliament?",
             answers: [
                 { text: "Magdalena Andersson", incorrect: false },
                 { text: "Andreas Norlén", correct: true },
