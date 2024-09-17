@@ -31,7 +31,6 @@ const questions = [
         
          ],
         },
-
     {
         question: "What is the smalest party in Sweden's parlament?",
         answers: [
@@ -47,7 +46,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerBtns = document.getElementById("answerbtn");
 const nextBtn = document.getElementById("nextbtn");
-const resultText = document.getElementById("result-section");
+const resultText = document.getElementById("result-text");
 const restartBtn = document.getElementById("restart-btn");
 
 const usernameInput = document.getElementById("username-input");
@@ -60,7 +59,7 @@ let score = 0;
 let username = "";
 
 // Start Quiz when Username is provided
-startBtns.addEventListener("click", () => {
+startBtn.addEventListener("click", () => {
     username = usernameInput.value.trim();
     if(username) {
         usernameSection.classList.add("hidden");
@@ -90,12 +89,13 @@ function showQuestion(){
         btn.classList.add("btn");
         answerBtns.appendChild(btn);
 
-        if(answer.correct){
+        if (answer.correct) {
             btn.dataset.correct = answer.correct;
         }
         btn.addEventListener("click", selectAnswer);
     });
-}
+ }
+ 
     function resetState() {
         nextBtn.style.display = "none";
         while(answerBtns.firstChild){
