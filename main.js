@@ -50,7 +50,7 @@ const resultText = document.getElementById("result-text");
 const restartBtn = document.getElementById("restart-btn");
 
 const usernameInput = document.getElementById("username-input");
-const startBtns = document.getElementById("start-btn");
+const startBtn = document.getElementById("start-btn");
 const usernameSection = document.getElementById("username-section");
 const quizSection = document.getElementById("quiz-section");
 
