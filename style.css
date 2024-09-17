@@ -32,17 +32,24 @@ body {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
+    text-align: center;
+}
+# quiz-section{
+    margin: auto;
+}
+#answerbtn {
+    margin-left: 0;
 }
 .btn {
     background: #e6e1e1;
     color: #000;
     font-size: 20px;
     font-weight: bold;
-    width: 80%;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
-    margin: 10px 0;
+    margin: 15px auto 0;
     padding: 10px;
     cursor: pointer;
 }
@@ -58,6 +65,10 @@ body {
     margin: 20px auto 0;
     display: none;
 }
+#result-text{
+    text-align: center;
+}
+
 
 .correct {
     background-color: #44bd32;
