@@ -5,7 +5,11 @@
    
 }
 body {
+    background-image: url(/assets/Riksdagen2009.jpg);
     background-color:#7fffd4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
 }
 .app {
     background: #fff;
