@@ -2,15 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
     
    
 }
 body {
-    background-color:#7fffd4;
-    opacity: 0.4;   
+    background-image:  url(assets/Riksdagen2009.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     
 }
 
-}
+
 .app {
     background: #fff;
     max-width: 500px;
@@ -39,7 +42,7 @@ body {
     padding-bottom: 10px;
     text-align: center;
 }
-# quiz-section{
+#quiz-section{
     margin: auto;
 }
 #answerbtn {
