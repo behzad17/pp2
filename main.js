@@ -74,6 +74,8 @@ const usernameInput = document.getElementById("username-input");
 const startBtn = document.getElementById("start-btn");
 const usernameSection = document.getElementById("username-section");
 const quizSection = document.getElementById("quiz-section");
+const feedbackSection = document.getElementById("feedback");
+const feedbackImg = document.getElementById("feedback-img");
 
 let currentQuestionIndex = 0;
 let score = 0;
