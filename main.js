@@ -129,12 +129,18 @@ function showQuestion(){
 function selectAnswer(e){
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
+    const currentQuestion = questions[currentQuestionIndex];
+
     if(isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
+        feedbackImg.src = currentQuestion.correctImage;
     } else {
         selectedBtn.classList.add("inCorrect");
+        feedbackImg.src = currentQuestion.incorrectImage;
     }
+feedbackSection.style.display = "block";
+
     Array.from(answerBtns.children).forEach((btn) => {
         if(btn.dataset.correct === "true") {
             btn.classList.add("correct");
