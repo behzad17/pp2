@@ -121,6 +121,7 @@ function showQuestion(){
  
     function resetState() {
         nextBtn.style.display = "none";
+        feedbackSection.style.display = "none";
         while(answerBtns.firstChild){
             answerBtns.removeChild(answerBtns.firstChild);
         }
