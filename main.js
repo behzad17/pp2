@@ -8,6 +8,8 @@ const questions = [
             { text: "350", incorrect: false },
         
          ],
+         correctImage: "images/correct.png",
+         incorrectImage: "images/incorrect.png",
     },
 
     {
