@@ -73,6 +73,7 @@ const restartBtn = document.getElementById("restart-btn");
 const usernameInput = document.getElementById("username-input");
 const startBtn = document.getElementById("start-btn");
 const usernameSection = document.getElementById("username-section");
+const passwordInput = document.getElementById("password-input")
 const quizSection = document.getElementById("quiz-section");
 const feedbackSection = document.getElementById("feedback");
 const feedbackImg = document.getElementById("feedback-img");
@@ -80,6 +81,7 @@ const feedbackImg = document.getElementById("feedback-img");
 let currentQuestionIndex = 0;
 let score = 0;
 let username = "";
+let password = "";
 
 // Start Quiz when Username is provided
  startBtn.addEventListener("click", () => {
@@ -89,7 +91,7 @@ let username = "";
         quizSection.classList.remove("hidden");
         startQuiz();
     } else{
-        alert("Enter a username to start the quiz");
+        alert("Enter both username and password to start the quiz");
     }
  });
 
@@ -172,4 +174,5 @@ restartBtn.addEventListener("click", () => {
     document.getElementById("result-section").classList.add("hidden");
     usernameSection.classList.remove("hidden");
     usernameInput.value = "";
+    passwordInput.nalue = "";
 });
