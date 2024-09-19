@@ -21,6 +21,8 @@ const questions = [
             { text: "12", incorrect: false },
         
          ],
+         correctImage: "images/correct.png",
+         incorrectImage: "images/incorrect.png",
         },
 
     {
@@ -32,6 +34,8 @@ const questions = [
             { text: "The Social Democratic Party", correct: true },
         
          ],
+         correctImage: "images/correct.png",
+         incorrectImage: "images/incorrect.png",
         },
     {
         question: "What is the smalest party in Sweden's parliament?",
@@ -42,6 +46,8 @@ const questions = [
             { text: "The Christian Democrats", incorrect: false },
         
          ],
+         correctImage: "images/correct.png",
+         incorrectImage: "images/incorrect.png",
         },
 
         {
@@ -53,6 +59,8 @@ const questions = [
                 { text: "Jimmie Åkesson", incorrect: false },
             
              ],
+             correctImage: "images/correct.png",
+         incorrectImage: "images/incorrect.png",
             },
 ];
 
