@@ -2,18 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    
-    
-   
 }
+
 body {
     background-image:  url(images/Riksdagen2009.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-     
+    background-size: cover;  
 }
 
 
@@ -23,10 +17,7 @@ body {
     width: 100%;
     border-radius: 10px;
     padding: 20px;
-    margin: 50px auto;
-    
-    
-    
+    margin: 50px auto;  
 }
 .app h2 {
     font-weight: normal;

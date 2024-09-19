@@ -1,3 +1,4 @@
+//Array of questions with answers
 const questions = [ 
     {
         question: "how many seats are there in Sweden's parliament?",
@@ -63,13 +64,14 @@ const questions = [
          incorrectImage: "images/incorrect.png",
             },
 ];
-
+// DOM elements
 const questionElement = document.getElementById("question");
 const answerBtns = document.getElementById("answerbtn");
 const nextBtn = document.getElementById("nextbtn");
 const resultText = document.getElementById("result-text");
 const restartBtn = document.getElementById("restart-btn");
 
+//username and password section , feedback elements
 const usernameInput = document.getElementById("username-input");
 const startBtn = document.getElementById("start-btn");
 const usernameSection = document.getElementById("username-section");
@@ -103,6 +105,7 @@ function startQuiz(){
     showQuestion();
 }
 
+//display the cuttrent question and answer
 function showQuestion(){
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
@@ -121,7 +124,7 @@ function showQuestion(){
         btn.addEventListener("click", selectAnswer);
     });
  }
- 
+ //reset for next question
     function resetState() {
         nextBtn.style.display = "none";
         feedbackSection.style.display = "none";
@@ -130,6 +133,7 @@ function showQuestion(){
         }
 }
 
+//this part works when user selects an answer
 function selectAnswer(e){
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -154,6 +158,7 @@ feedbackSection.style.display = "block";
     nextBtn.style.display = "block";
 }
 
+//next button
 nextBtn.addEventListener("click", () => {
     currentQuestionIndex++;
 
@@ -163,6 +168,7 @@ nextBtn.addEventListener("click", () => {
         showResults();
     }
 });
+//show the quiz result
 function showResults() {
     quizSection.classList.add("hidden");
     document.getElementById("result-section").classList.remove("hidden");
@@ -170,7 +176,7 @@ function showResults() {
     restartBtn.style.display = "block";
      // here Shows the restart button when the quiz is complete
 }
-//reset section
+//reset or restart section
 restartBtn.addEventListener("click", () => {
     document.getElementById("result-section").classList.add("hidden");
     usernameSection.classList.remove("hidden");
