@@ -86,7 +86,8 @@ let password = "";
 // Start Quiz when Username is provided
  startBtn.addEventListener("click", () => {
     username = usernameInput.value.trim();
-    if(username) {
+    password = passwordInput.value.trim();
+    if(username && password) {
         usernameSection.classList.add("hidden");
         quizSection.classList.remove("hidden");
         startQuiz();
