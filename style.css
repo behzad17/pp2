@@ -4,10 +4,6 @@
     box-sizing: border-box;
 } 
 body { 
-   
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;
     background-color: #006aa7;
 }
 
@@ -19,7 +15,7 @@ body {
     width: 90%;
     border-radius: 10px;
     padding: 20px;
-    margin: 250px auto;  
+    margin: 100px auto;  
 }
 .app h2 {
     font-weight: normal;
