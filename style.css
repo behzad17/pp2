@@ -2,22 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-image:  url(images/Riksdagen2009.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;  
+} 
+.body { 
+    background-image: url(images/Riksdagen2009.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
 
 .app {
     background: rgb(254, 204, 0, 0.9);
     max-width: 500px;
-    width: 100%;
+    max-height: 600px;
+    width: 90%;
     border-radius: 10px;
     padding: 20px;
-    margin: 50px auto;  
+    margin:30px auto;  
 }
 .app h2 {
     font-weight: normal;
