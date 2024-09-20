@@ -38,3 +38,14 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
  #### Adding More Questions: 
  Its possible to add more questions to the quiz by modifying the questions array in the main.js file. 
 
+## Content
+The texts for the Home page was taken from Swedish riksdags websidan
+
+## Validator Testing
+* HTML
+No errors were returned when passing through the official W3C validator
+* CSS
+No errors were found when passing through the official (Jigsaw) validator
+* JavaScript
+No errors were found when passing through the official Jshint validator
+
