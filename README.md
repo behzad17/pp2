@@ -11,12 +11,14 @@ This project is a simple online quiz built with HTML, CSS, and JavaScript. The q
  The quiz includes questions with multiple answers about Sweden's Parliament.
  #### Visual support to answers: 
  Correct and incorrect answers are visually indicated during the quiz.
+
+
  #### Score Tracking: 
  The user’s score is displayed at the end of the quiz.
  ![score image](/assets/Screenshot%202024-09-20%20at%2015.20.19.png)
  #### Restart Option: 
  After completing the quiz, users can restart and take the quiz again.
-
+ ![correct/incorrect image](/assets/correct:incorrect.png)
  ## Structure
  The Quiz include html, css, javascript files and assets file with images plus README.md file
 
@@ -59,4 +61,9 @@ No errors were found when passing through the [W3C Javascript validator](https:/
 * Largest function has 12 statements in it, while the median is 4.
 
 * The most complex function has a cyclomatic complexity value of 3 while the median is 2.
+
+## Accessibility
+
+![Accessibility image](/assets/accessibility.png)
+
 
