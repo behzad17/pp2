@@ -43,9 +43,20 @@ The texts for the Home page was taken from Swedish riksdags websidan
 
 ## Validator Testing
 * HTML
-No errors were returned when passing through the official W3C validator
+
+No errors were returned when passing through the [W3C html validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbehzad17.github.io%2Fpp2%2F)
 * CSS
-No errors were found when passing through the official (Jigsaw) validator
+
+No errors were found when passing through the [W3C CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbehzad17.github.io%2Fpp2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 * JavaScript
-No errors were found when passing through the official Jshint validator
+
+No errors were found when passing through the [W3C Javascript validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbehzad17.github.io%2Fpp2%2F)
+
+* There are 11 functions in this file.
+
+* Function with the largest signature take 1 arguments, while the median is 0.
+
+* Largest function has 12 statements in it, while the median is 4.
+
+* The most complex function has a cyclomatic complexity value of 3 while the median is 2.
 
