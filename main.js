@@ -172,7 +172,7 @@ nextBtn.addEventListener("click", () => {
 function showResults() {
     quizSection.classList.add("hidden");
     document.getElementById("result-section").classList.remove("hidden");
-    resultText.innerHTML = `Quiz Complete! ${username}, you scored ${score} out of ${questions.length}.`;
+    resultText.innerHTML = `Quiz Complete! ${username}, you scored ${score} out of ${questions.length}`;
     restartBtn.style.display = "block";
      // here Shows the restart button when the quiz is complete
 }
