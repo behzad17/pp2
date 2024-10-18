@@ -111,7 +111,9 @@ function showQuestion(){
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNum + ". " + currentQuestion.question;
-
+    
+    questionElement.classList.add("fade-in");
+    
     currentQuestion.answers.forEach((answer) => {
         const btn = document.createElement("button");
         btn.innerHTML = answer.text;
