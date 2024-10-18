@@ -85,6 +85,15 @@ body {
     margin: 5px auto 0;
     display: none;
 }
+#start-btn:hover, #nextbtn:hover, #restart-btn:hover {
+    background-color: #0065b3;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: #b3c7dd;
+    transition: background-color 0.3s ease ;
+}
 #result-text{
     text-align: center;
 }
