@@ -12,8 +12,7 @@ This project is a simple online quiz built with HTML, CSS, and JavaScript. The q
  #### Visual support to answers: 
  Correct and incorrect answers are visually indicated during the quiz.
 
-
- #### Score Tracking: 
+#### Score Tracking:
  The user’s score is displayed at the end of the quiz.
  ![score image](/assets/Screenshot%202024-09-20%20at%2015.20.19.png)
  #### Restart Option: 
@@ -37,7 +36,7 @@ This project is a simple online quiz built with HTML, CSS, and JavaScript. The q
 
  ## Credits
 
-**Icons and Images**: Icons and images used for feedback (correct/incorrect answers) were sourced from [Unsplash](https://www.shutterstock.com/) and custom assets created using tools like [favicon.io](https://favicon.io).
+**Icons and Images**: Icons and images used for feedback (correct/incorrect answers) were sourced from [shutterstock](https://www.shutterstock.com/) and custom assets created using tools like [favicon.io](https://favicon.io).
 
 **Quiz Questions**: The questions about Sweden's Parliament were created based on official information from Swedish government resources.
 
