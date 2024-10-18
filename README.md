@@ -22,6 +22,19 @@ This project is a simple online quiz built with HTML, CSS, and JavaScript. The q
  ## Structure
  The Quiz include html, css, javascript files and assets file with images plus README.md file
 
+ ## Design Section
+ ### Color choices
+ The main color for the background is #006aa7 blue that representing the Swedish flag.
+
+ ### Font Choices:
+ The chosen font is Arial 
+
+ ### Layout:
+ The site is structured using a centered container design with a maximum width of 500px to ensure a focused and readable quiz experience. Media queries are used to adjust the layout on smaller devices, such as mobile phones.
+
+ ## Browser Testing:
+ The website tested on Google Chroom, Mozila and safari , no issues found.
+
  ## Setups
  ### 1- Clone the repository:
   klick here to see the project in github[Klick Here](https://github.com/behzad17/pp2)
