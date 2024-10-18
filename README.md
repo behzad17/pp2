@@ -35,6 +35,13 @@ This project is a simple online quiz built with HTML, CSS, and JavaScript. The q
  ## Browser Testing:
  The website tested on Google Chroom, Mozila and safari , no issues found.
 
+ ## Credits
+
+**Icons and Images**: Icons and images used for feedback (correct/incorrect answers) were sourced from [Unsplash](https://www.shutterstock.com/) and custom assets created using tools like [favicon.io](https://favicon.io).
+
+**Quiz Questions**: The questions about Sweden's Parliament were created based on official information from Swedish government resources.
+
+
  ## Setups
  ### 1- Clone the repository:
   klick here to see the project in github[Klick Here](https://github.com/behzad17/pp2)
