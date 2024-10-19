@@ -1,5 +1,5 @@
 //Array of questions with answers
-const questions = [ 
+const questions = [
     {
         question: "how many seats are there in Sweden's parliament?",
         answers: [
@@ -7,10 +7,10 @@ const questions = [
             { text: "348", incorrect: false },
             { text: "349", correct: true },
             { text: "350", incorrect: false },
-        
-         ],
-         correctImage: "assets/correct.png",
-         incorrectImage: "assets/incorrect.png",
+
+        ],
+        correctImage: "assets/correct.png",
+        incorrectImage: "assets/incorrect.png",
     },
 
     {
@@ -20,11 +20,11 @@ const questions = [
             { text: "9", incorrect: false },
             { text: "11", incorrect: false },
             { text: "12", incorrect: false },
-        
-         ],
-         correctImage: "assets/correct.png",
-         incorrectImage: "assets/incorrect.png",
-        },
+
+        ],
+        correctImage: "assets/correct.png",
+        incorrectImage: "assets/incorrect.png",
+    },
 
     {
         question: "What is the bigest party in Sweden's parliament?",
@@ -33,11 +33,11 @@ const questions = [
             { text: "The Left Party", incorrect: false },
             { text: "The Sweden Democrats", incorrect: false },
             { text: "The Social Democratic Party", correct: true },
-        
-         ],
-         correctImage: "assets/correct.png",
-         incorrectImage: "assets/incorrect.png",
-        },
+
+        ],
+        correctImage: "assets/correct.png",
+        incorrectImage: "assets/incorrect.png",
+    },
     {
         question: "What is the smalest party in Sweden's parliament?",
         answers: [
@@ -45,24 +45,24 @@ const questions = [
             { text: "The Liberal Party", correct: true },
             { text: "The Green Party", incorrect: false },
             { text: "The Christian Democrats", incorrect: false },
-        
-         ],
-         correctImage: "assets/correct.png",
-         incorrectImage: "assets/incorrect.png",
-        },
 
-        {
-            question: "who is the current Speaker of Sweden's parliament?",
-            answers: [
-                { text: "Magdalena Andersson", incorrect: false },
-                { text: "Andreas Norlén", correct: true },
-                { text: "Ulf Kristersson", incorrect: false },
-                { text: "Jimmie Åkesson", incorrect: false },
-            
-             ],
-             correctImage: "assets/correct.png",
-         incorrectImage: "assets/incorrect.png",
-            },
+        ],
+        correctImage: "assets/correct.png",
+        incorrectImage: "assets/incorrect.png",
+    },
+
+    {
+        question: "who is the current Speaker of Sweden's parliament?",
+        answers: [
+            { text: "Magdalena Andersson", incorrect: false },
+            { text: "Andreas Norlén", correct: true },
+            { text: "Ulf Kristersson", incorrect: false },
+            { text: "Jimmie Åkesson", incorrect: false },
+
+        ],
+        correctImage: "assets/correct.png",
+        incorrectImage: "assets/incorrect.png",
+    },
 ];
 // DOM elements
 const questionElement = document.getElementById("question");
@@ -86,19 +86,19 @@ let username = "";
 let password = "";
 
 // Start Quiz when Username is provided
- startBtn.addEventListener("click", () => {
+startBtn.addEventListener("click", () => {
     username = usernameInput.value.trim();
     password = passwordInput.value.trim();
-    if(username && password) {
+    if (username && password) {
         usernameSection.classList.add("hidden");
         quizSection.classList.remove("hidden");
         startQuiz();
-    } else{
+    } else {
         alert("Enter both username and password to start the quiz");
     }
- });
+});
 
-function startQuiz(){
+function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextBtn.innerHTML = "Next";
@@ -106,14 +106,14 @@ function startQuiz(){
 }
 
 //display the cuttrent question and answer
-function showQuestion(){
+function showQuestion() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNum + ". " + currentQuestion.question;
-    
+
     questionElement.classList.add("fade-in");
-    
+
     currentQuestion.answers.forEach((answer) => {
         const btn = document.createElement("button");
         btn.innerHTML = answer.text;
@@ -125,14 +125,14 @@ function showQuestion(){
         }
         btn.addEventListener("click", selectAnswer);
     });
- }
- //reset for next question
-    function resetState() {
-        nextBtn.style.display = "none";
-        feedbackSection.style.display = "none";
-        while(answerBtns.firstChild){
-            answerBtns.removeChild(answerBtns.firstChild);
-        }
+}
+//reset for next question
+function resetState() {
+    nextBtn.style.display = "none";
+    feedbackSection.style.display = "none";
+    while (answerBtns.firstChild) {
+        answerBtns.removeChild(answerBtns.firstChild);
+    }
 }
 
 //sound files for correct and incorrect answers
@@ -148,7 +148,7 @@ function playSound(isCorrect) {
 }
 
 //this part works when user selects an answer
-function selectAnswer(e){
+function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     const currentQuestion = questions[currentQuestionIndex];
@@ -156,7 +156,7 @@ function selectAnswer(e){
     //playing the right sound for the answers
     playSound(isCorrect);
 
-    if(isCorrect) {
+    if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
         feedbackImg.src = currentQuestion.correctImage;
@@ -164,10 +164,10 @@ function selectAnswer(e){
         selectedBtn.classList.add("inCorrect");
         feedbackImg.src = currentQuestion.incorrectImage;
     }
-feedbackSection.style.display = "block";
+    feedbackSection.style.display = "block";
 
     Array.from(answerBtns.children).forEach((btn) => {
-        if(btn.dataset.correct === "true") {
+        if (btn.dataset.correct === "true") {
             btn.classList.add("correct");
         }
         btn.disabled = true;
@@ -179,7 +179,7 @@ feedbackSection.style.display = "block";
 nextBtn.addEventListener("click", () => {
     currentQuestionIndex++;
 
-    if(currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
         showResults();
@@ -191,7 +191,7 @@ function showResults() {
     document.getElementById("result-section").classList.remove("hidden");
     resultText.innerHTML = `Quiz Complete! ${username}, you scored ${score} out of ${questions.length}`;
     restartBtn.style.display = "block";
-     // here Shows the restart button when the quiz is complete
+    // here Shows the restart button when the quiz is complete
 }
 //reset or restart section
 restartBtn.addEventListener("click", () => {

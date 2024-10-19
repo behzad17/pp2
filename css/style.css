@@ -3,9 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
+
 /* background color for body */
-body { 
+body {
     background-color: #006aa7;
 }
 
@@ -31,7 +32,7 @@ body {
     width: 90%;
     border-radius: 10px;
     padding: 20px;
-    margin: 100px auto;  
+    margin: 100px auto;
 }
 
 /* styling main heading */
@@ -49,7 +50,9 @@ body {
     width: 70px;
     border-radius: 5px;
 }
-#username-input, #password-input {
+
+#username-input,
+#password-input {
     height: 30px;
     background-color: aliceblue;
     padding-left: 5px;
@@ -58,21 +61,25 @@ body {
 }
 
 
-.quiz, .result {
+.quiz,
+.result {
     padding: 10px 0;
 }
 
 /* question and result headers styles */
-.quiz h3, .result h3 {
+.quiz h3,
+.result h3 {
     color: #006aa7;
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
     text-align: center;
 }
-#quiz-section{
+
+#quiz-section {
     margin: auto;
 }
+
 #answerbtn {
     margin-left: 0;
 }
@@ -98,7 +105,9 @@ body {
     padding: 10px;
     cursor: pointer;
 }
-#nextbtn, #restart-btn {
+
+#nextbtn,
+#restart-btn {
     width: 120px;
     height: 35px;
     background: #3867d6;
@@ -112,7 +121,9 @@ body {
 }
 
 /* hover effect for start,next and restart button */
-#start-btn:hover, #nextbtn:hover, #restart-btn:hover {
+#start-btn:hover,
+#nextbtn:hover,
+#restart-btn:hover {
     background-color: #0065b3;
     transform: scale(1.05);
     transition: all 0.3s ease;
@@ -121,11 +132,13 @@ body {
 /* hover effect for general guiz button */
 .btn:hover {
     background-color: #b3c7dd;
-    transition: background-color 0.3s ease ;
+    transition: background-color 0.3s ease;
 }
-#result-text{
+
+#result-text {
     text-align: center;
 }
+
 #username-section {
     margin-left: auto;
     text-align: center;
@@ -141,6 +154,7 @@ body {
 .inCorrect {
     background-color: #c23616;
 }
+
 .hidden {
     display: none;
 }
@@ -152,6 +166,11 @@ body {
 
 /* keyframes for fade-in */
 @keyframes fadeIn {
-    from { opacity: 0;}
-    to { opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

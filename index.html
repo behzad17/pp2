@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +9,48 @@
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
     <title>Online Quiz</title>
 </head>
-<body> 
+
+<body>
     <div class="background"></div>
-       
- <div class="app">
+
+    <div class="app">
         <h2>Online Quiz <br>
             Test your knowledge about <br>"Sweden's Parliament"</h2>
 
-    <!--Username section-->
-    <div id="username-section">
+        <!--Username section-->
+        <div id="username-section">
             <h3>Create a username to start</h3>
             <input type="text" id="username-input" placeholder="username"><br>
             <input type="password" id="password-input" placeholder="Password"><br><br>
-        <button id="start-btn">Start Quiz</button>
-    </div>
-
-    <!--Quiz section-->
-    <div id="quiz-section" class="hidden">
-        <div class="quiz">
-            <h3 id="question">Question</h3>
-        </div>
-        
-        <div id="answerbtn">
+            <button id="start-btn">Start Quiz</button>
         </div>
 
-        <div id="feedback" style="display: none; text-align: center;">
-            <img id="feedback-img" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Answer Feedback" style="max-width: 100px;">
+        <!--Quiz section-->
+        <div id="quiz-section" class="hidden">
+            <div class="quiz">
+                <h3 id="question">Question</h3>
+            </div>
+
+            <div id="answerbtn">
+            </div>
+
+            <div id="feedback" style="display: none; text-align: center;">
+                <img id="feedback-img" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    alt="Answer Feedback" style="max-width: 100px;">
+            </div>
+            <button id="nextbtn">Next</button>
+
         </div>
-        <button id="nextbtn">Next</button>
-            
+
+        <!--results section-->
+        <div id="result-section" class="hidden">
+            <h3 id="result-text">result</h3>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
     </div>
 
-    <!--results section-->
-    <div id="result-section" class="hidden">
-        <h3 id="result-text">result</h3>
-        <button id="restart-btn">Restart Quiz</button>
-    </div>
- </div>
-
- <!--link to external JS file-->
+    <!--link to external JS file-->
     <script src="/js/main.js"></script>
 </body>
+
 </html>
