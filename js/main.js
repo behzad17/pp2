@@ -153,6 +153,9 @@ function selectAnswer(e){
     const isCorrect = selectedBtn.dataset.correct === "true";
     const currentQuestion = questions[currentQuestionIndex];
 
+    //playing the right sound for the answers
+    playSound(isCorrect);
+
     if(isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
