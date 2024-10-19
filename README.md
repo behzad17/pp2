@@ -86,4 +86,17 @@ No errors were found when passing through the [W3C Javascript validator](https:/
 
 ![Accessibility image](/assets/accessibility.png)
 
-
+## What did I do to Improve the Website Design and Interactivity according to the feedback
+### Added More Animations and JavaScript Effects:
+I used more animations and JavaScript effects to make the website more interactive and engaging for users.
+### Included Favicon and 404 Page:
+I added a favicon to the website for a more professional look, and I created a custom 404 page to handle errors better.
+### Improved Documentation and README:
+I added more details about the testing process , Credits, and  tests.
+I add comments to the CSS file, explaining the designs.
+### Organized Files Better:
+I organised the project by putting the CSS, HTML, JavaScript, and assets files into separate, clear folders.
+### More Detailed Commits:
+This time, I made more commits for specific changes to keep the version history clear and organised.
+### Increased Website Interactivity:
+I added features like sound effects and a background image to make the site more attractive and interactive.
