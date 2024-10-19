@@ -135,6 +135,18 @@ function showQuestion(){
         }
 }
 
+//sound files for correct and incorrect answers
+const correctSound = new Audio('assets/correct.mp3');
+const incorrectSound = new Audio('assets/incorrect.mp3');
+
+function playSound(isCorrect) {
+    if (isCorrect) {
+        correctSound.play();
+    } else {
+        incorrectSound.play();
+    }
+}
+
 //this part works when user selects an answer
 function selectAnswer(e){
     const selectedBtn = e.target;
