@@ -36,10 +36,11 @@ This project is a simple online quiz built with HTML, CSS, and JavaScript. The q
 
  ## Credits
 
-**Icons and Images**: Icons and images used for feedback (correct/incorrect answers) were sourced from [shutterstock](https://www.shutterstock.com/) and custom assets created using tools like [favicon.io](https://favicon.io).
+**Icons and Images**: Icons and images used for feedback (correct/incorrect answers) were sourced from [shutterstock](https://www.shutterstock.com/).
 
 **Quiz Questions**: The questions about Sweden's Parliament were created based on official information from Swedish government resources.
 
+**Sound effects**: The correct and incorrect sound effects used for doing the website more engaging from [pixabay](https://pixabay.com/)
 
  ## Setups
  ### 1- Clone the repository:
