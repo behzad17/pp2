@@ -1,13 +1,15 @@
+/* reseting margin, padding and box sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
+/* background color for body */
 body { 
     background-color: #006aa7;
 }
 
-
+/* main container */
 .app {
     background: rgb(254, 204, 0, 0.9);
     max-width: 500px;
@@ -17,6 +19,8 @@ body {
     padding: 20px;
     margin: 100px auto;  
 }
+
+/* styling main heading */
 .app h2 {
     font-weight: normal;
     color: #134e6f;
@@ -24,6 +28,8 @@ body {
     padding-bottom: 25px;
     text-align: center;
 }
+
+/* start buttons styles */
 #start-btn {
     height: 30px;
     width: 70px;
@@ -41,6 +47,8 @@ body {
 .quiz, .result {
     padding: 10px 0;
 }
+
+/* question and result headers styles */
 .quiz h3, .result h3 {
     color: #006aa7;
     font-size: 20px;
@@ -54,12 +62,15 @@ body {
 #answerbtn {
     margin-left: 0;
 }
+
+/* styling for feedback image */
 #feedback-img {
     width: 50px;
     height: 50px;
     padding: 0;
 }
 
+/* styling for general button */
 .btn {
     background: #c1d7e5;
     color: #000;
@@ -85,11 +96,15 @@ body {
     margin: 5px auto 0;
     display: none;
 }
+
+/* hover effect for start,next and restart button */
 #start-btn:hover, #nextbtn:hover, #restart-btn:hover {
     background-color: #0065b3;
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
+
+/* hover effect for general guiz button */
 .btn:hover {
     background-color: #b3c7dd;
     transition: background-color 0.3s ease ;
@@ -103,10 +118,12 @@ body {
     margin: 10px;
 }
 
+/* correct answer background color */
 .correct {
     background-color: #44bd32;
 }
 
+/* incorrect answer background color */
 .inCorrect {
     background-color: #c23616;
 }
@@ -114,10 +131,12 @@ body {
     display: none;
 }
 
+/* fade-in animation for elements */
 .fade-in {
     animation: fadeIn 0.5s ease-in-out;
 }
 
+/* keyframes for fade-in */
 @keyframes fadeIn {
     from { opacity: 0;}
     to { opacity: 1;}
